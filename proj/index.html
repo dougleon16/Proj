@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Laborartorio #5</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="titleItm">Laborartorio #5</div>
+    </nav>
+
+    <nav class="sidebar">
+      <form>
+        <div class="menuCont">
+          <div class="menuTitle">New Grade</div>
+          <input
+            type="num"
+            class="input_grade"
+            id="input_grade"
+            min="0"
+            max="100"
+            required
+          />
+          <button class="btnAddGrade">Add</button>
+          <button class="btnDeleteGrade" hidden>Delete Grade</button>
+        </div>
+      </form>
+    </nav>
+
+    <div class="secGeneral">
+      <div class="secGrades">
+        <h3>Student Grades</h3>
+
+        <div id="listaGrades"></div>
+      </div
+      <div class="secGraph">
+        <div class="contGraph">
+          <div class="circProgress">
+            <span class="progValue">0%</span>
+          </div>
+
+          <span class="span">Average</span>
+          <div>
+            <span class="span" id="avg">0</span><span class="span"> / 100</span>
+          </div>
+          <span id="myGrade">-</span>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./scripts.js "></script>
+  </body>
+</html>
